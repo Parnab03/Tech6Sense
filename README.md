@@ -47,7 +47,7 @@ Each language module comes with structured topics, real-world examples, and quiz
 -->
 
 ## 📝 Contributing
-We welcome contributions! If you'd like to help improve Tech6Sense, please read our [contribution guidelines](CONTRIBUTING.md) and adhere to our code of conduct.
+We welcome contributions! If you'd like to help improve Tech6Sense, please read our [contribution guidelines](CONTRIBUTING.md) and adhere to our [code of conduct](https://github.com/Parnab03/Tech6Sense/blob/main/CODE_OF_CONDUCT.md).
 
 ### How to Contribute
 1. Star and Fork the repository.
