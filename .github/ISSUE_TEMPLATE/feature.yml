@@ -1,0 +1,75 @@
+name: "💡 Feature "
+description: "Have a new idea or feature suggestion for Tech6Sense? Share it with us!"
+title: "Feature Request: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to **Tech6Sense**! We’re excited to hear your ideas for improving our all-in-one portal for learning programming languages and preparing for placements. Please provide as much detail as possible to help us understand your suggestion.
+
+  - type: textarea
+    id: description
+    validations:
+      required: true
+    attributes:
+      label: "🔖 Feature Description"
+      description: "Provide a clear description of the new feature or improvement you'd like to see. Mention any specific language or placement-related module this feature would impact."
+      placeholder: "The feature I'm proposing is..."
+
+  - type: textarea
+    id: benefits
+    validations:
+      required: true
+    attributes:
+      label: "📈 Benefits to Tech6Sense"
+      description: "Explain how this feature will benefit Tech6Sense users or enhance the learning experience. Consider how it might improve language modules, placement readiness, or user engagement."
+      placeholder: "This feature will help by..."
+
+  - type: textarea
+    id: target-audience
+    validations:
+      required: false
+    attributes:
+      label: "👥 Target Audience (Optional)"
+      description: "Identify the type of users who would benefit most from this feature, such as C language beginners, advanced Java learners, or placement-prep users."
+      placeholder: "This feature would be helpful for..."
+
+  - type: textarea
+    id: implementation
+    validations:
+      required: false
+    attributes:
+      label: "🛠️ Suggested Implementation (Optional)"
+      description: "If you have ideas on how this feature could be implemented, please share them. Consider modules, tools, or any specific UI components needed."
+      placeholder: "I suggest implementing this feature by..."
+
+  - type: textarea
+    id: screenshots
+    validations:
+      required: false
+    attributes:
+      label: "📷 Mockups or Screenshots"
+      description: "Attach any relevant screenshots or design mockups to help visualize your feature request, if available."
+      placeholder: "Attach any visual aids here."
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "✔️ Pre-Submission Checklist"
+      options:
+        - label: "I have checked for duplicate issues to ensure this is a unique suggestion."
+          required: true
+        - label: "I have read and understood the [Tech6Sense Contributing Guidelines](https://github.com/Parnab03/Tech6Sense/blob/main/CONTRIBUTING.md)."
+          required: true
+        - label: "I have reviewed the [Code of Conduct](https://github.com/Parnab03/Tech6Sense/blob/main/CODE_OF_CONDUCT.md) and agree to abide by it."
+          required: true
+
+  - type: textarea
+    id: additional-notes
+    validations:
+      required: false
+    attributes:
+      label: "📝 Additional Context (Optional)"
+      description: "Provide any other relevant details, examples, or context to help us understand and evaluate your feature request."
+      placeholder: "Any other information..."
