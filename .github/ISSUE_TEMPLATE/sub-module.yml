@@ -1,0 +1,87 @@
+name: "📄 Sub-Module Request"
+description: "Propose a new sub-module to expand an existing module in Tech6Sense."
+title: "Sub-Module Addition: "
+labels: [sub-module, enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for proposing a new sub-module for **Tech6Sense**! Please provide the details below to help us understand the purpose of your sub-module and how it fits within the existing module structure.
+
+  - type: textarea
+    id: parent-module
+    validations:
+      required: true
+    attributes:
+      label: "🗂️ Parent Module"
+      description: "Specify the parent module to which this sub-module belongs."
+      placeholder: "This sub-module is part of the [Parent Module Name and issue number] module..."
+
+  - type: textarea
+    id: submodule-description
+    validations:
+      required: true
+    attributes:
+      label: "📖 Sub-Module Description"
+      description: "Provide a brief description of the sub-module, explaining its purpose and what it covers."
+      placeholder: "This sub-module focuses on..."
+
+  - type: textarea
+    id: learning-outcome
+    validations:
+      required: true
+    attributes:
+      label: "🎯 Outcomes"
+      description: "List the key learning outcomes or skills users will gain from this sub-module."
+      placeholder: "After completing this sub-module, users will be able to..."
+
+  - type: textarea
+    id: essential-info
+    validations:
+      required: false
+    attributes:
+      label: "📋 Essential Information"
+      description: "List any important details or background knowledge needed for this sub-module, if applicable."
+      placeholder: "Users should know..."
+
+  - type: textarea
+    id: structure-and-activities
+    validations:
+      required: false
+    attributes:
+      label: "📂 Structure and Activities (Optional)"
+      description: "Suggest the structure of the sub-module, such as sections, exercises, or interactive elements."
+      placeholder: "This sub-module could be structured as follows..."
+
+  - type: textarea
+    id: screenshots
+    validations:
+      required: false
+    attributes:
+      label: "📷 Screenshots or Mockups"
+      description: "Attach any visual aids or mockups to help illustrate your sub-module proposal, if available."
+      placeholder: "Attach any visual aids here."
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "✔️ Pre-Submission Checklist"
+      options:
+        - label: "I have checked that a similar sub-module does not already exist in the parent module."
+          required: true
+        - label: "I have considered the relevance of this sub-module to the parent module and overall project goals."
+          required: true
+        - label: "I have reviewed the [Contributing Guidelines](https://github.com/Parnab03/Tech6Sense/blob/main/CONTRIBUTING.md) for adding new sub-modules."
+          required: true
+        - label: "I have reviewed the [Code of Conduct](https://github.com/Parnab03/Tech6Sense/blob/main/CODE_OF_CONDUCT.md) and agree to abide by it."
+          required: true
+        
+
+  - type: textarea
+    id: additional-notes
+    validations:
+      required: false
+    attributes:
+      label: "📝 Additional Notes (Optional)"
+      description: "Provide any other relevant information or context for this sub-module proposal."
+      placeholder: "Any other details..."
