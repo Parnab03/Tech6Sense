@@ -1,58 +1,52 @@
 name: "🐞 Bug Report"
-description: "Report a bug to help us improve Tech6Sense."
-title: "Bug: "
-labels: [bug, needs review]
+description: "Help us improve the project by reporting any issues you're facing."
+title: " Bug Report: "
+labels: ["bug", "help wanted"]
 body:
   - type: markdown
     attributes:
       value: |
-        Please provide the necessary details to help us reproduce and resolve the bug as quickly as possible.
-
+        Thank you for reporting a bug! Please fill out the form below to help us understand the issue.
   - type: textarea
     id: description
     validations:
       required: true
     attributes:
-      label: "🔎 Description of the Bug"
-      description: "Provide a clear and concise description of the bug, including where it occurs."
-      placeholder: "The bug occurs when..."
-
+      label: "🔖 Bug Description"
+      description: "Provide a clear and concise description of the bug, including what you expected to happen and what actually happened. Include any troubleshooting steps you've tried."
+      placeholder: "I encountered a bug where..."
   - type: textarea
-    id: steps-to-reproduce
+    id: reproduction-steps
     validations:
       required: true
     attributes:
       label: "🔄 Steps to Reproduce"
-      description: "List the steps required to reproduce the bug."
-      placeholder: "1. Go to...\n2. Click on...\n3. Observe the error..."
-
+      description: "List the steps required to reproduce the bug. Be as detailed as possible."
+      placeholder: "1. Go to...\n2. Click on...\n3. Scroll to...\n4. See the error"
   - type: textarea
     id: expected-behavior
     validations:
       required: true
     attributes:
       label: "✔️ Expected Behavior"
-      description: "Describe what you expected to happen."
-      placeholder: "I expected the module to..."
-
-  - type: textarea
-    id: actual-behavior
-    validations:
-      required: true
-    attributes:
-      label: "❌ Actual Behavior"
-      description: "Explain what actually happened instead."
-      placeholder: "Instead of the expected behavior..."
-
+      description: "Describe what you expected to happen instead."
+      placeholder: "I expected that..."
   - type: textarea
     id: screenshots
     attributes:
-      label: "📷 Screenshots or Logs"
-      description: "Attach any relevant screenshots or logs that might help in diagnosing the issue."
-      placeholder: "Attach any images or logs here."
-      validations:
-        required: false
-
+      label: "📷 Screenshots"
+      description: "Please attach any relevant screenshots that help demonstrate the issue."
+      placeholder: "Attach visual evidence if applicable."
+    validations:
+      required: false
+  - type: textarea
+    id: extrainfo
+    attributes:
+      label: "📝 Additional Information"
+      description: "Provide any additional information, such as logs, error messages, or specific circumstances where the bug occurs."
+      placeholder: "Add any other context here."
+    validations:
+      required: false
   - type: dropdown
     id: browsers
     attributes:
@@ -64,7 +58,6 @@ body:
         - Chrome
         - Safari
         - Microsoft Edge
-        
   - type: checkboxes
     id: checklist
     attributes:
@@ -78,7 +71,6 @@ body:
           required: true
         - label: "I have reviewed the [Code of Conduct](https://github.com/Parnab03/Tech6Sense/blob/main/CODE_OF_CONDUCT.md) and agree to abide by it."
           required: true
-
   - type: textarea
     id: additional-notes
     attributes:
