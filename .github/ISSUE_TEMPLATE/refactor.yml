@@ -1,0 +1,58 @@
+name: "🛠️ Refactor Code"
+description: "Suggest refactoring of existing code to improve readability, performance, or maintainability."
+title: "Refactor: "
+labels: [refactor]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us keep our codebase clean and maintainable! Use this template to propose refactoring for existing code.
+
+  - type: textarea
+    id: code-section
+    validations:
+      required: true
+    attributes:
+      label: "🔍 Code Section"
+      description: "Specify which section or module of the codebase needs refactoring."
+      placeholder: "This refactor suggestion is for the..."
+
+  - type: textarea
+    id: reason-for-refactor
+    validations:
+      required: true
+    attributes:
+      label: "💡 Reason for Refactoring"
+      description: "Describe the reasons for refactoring this code (e.g., readability, performance)."
+      placeholder: "Refactoring this section will help by..."
+
+  - type: textarea
+    id: refactoring-suggestions
+    validations:
+      required: false
+    attributes:
+      label: "📝 Suggested Changes"
+      description: "Provide details of the proposed refactoring."
+      placeholder: "I suggest refactoring by..."
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "✔️ Pre-Submission Checklist"
+      options:
+        - label: "I have reviewed the existing code and confirmed the need for refactoring."
+          required: true
+        - label: "I have ensured that my refactoring suggestions align with the project's goals."
+          required: true
+        - label: "I have read and understood the [Tech6Sense Contributing Guidelines](https://github.com/Parnab03/Tech6Sense/blob/main/CONTRIBUTING.md)."
+          required: true
+        - label: "I have reviewed the [Code of Conduct](https://github.com/Parnab03/Tech6Sense/blob/main/CODE_OF_CONDUCT.md) and agree to abide by it."
+          required: true
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: "📝 Additional Notes (Optional)"
+      description: "Provide any other relevant information that could help in resolving the issue."
+      placeholder: "Add any extra details here."
+    validations:
+      required: false
