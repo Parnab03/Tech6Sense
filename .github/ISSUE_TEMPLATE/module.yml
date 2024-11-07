@@ -1,0 +1,77 @@
+name: "📚 Module Request"
+description: "Propose a new module for Tech6Sense's learning or placement preparation sections."
+title: "Module Addition: "
+labels: [module, enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your interest in contributing a new module to **Tech6Sense**! Please provide the details below to help us understand your module proposal and its benefits to the platform.
+
+  - type: textarea
+    id: module-description
+    validations:
+      required: true
+    attributes:
+      label: "📖 Module Description"
+      description: "Provide a concise description of the module, explaining what it covers and its purpose."
+      placeholder: "This module covers..."
+
+  - type: textarea
+    id: module-outcome
+    validations:
+      required: true
+    attributes:
+      label: "🎯 Learning Outcomes"
+      description: "List the key learning outcomes or skills users will gain from completing this module."
+      placeholder: "After completing this module, users will be able to..."
+
+  - type: textarea
+    id: prerequisites
+    validations:
+      required: false
+    attributes:
+      label: "📋 Prerequisites (Optional)"
+      description: "List any prerequisites or prior knowledge needed before starting this module, if applicable."
+      placeholder: "Users should be familiar with..."
+
+  - type: textarea
+    id: suggested-structure
+    validations:
+      required: false
+    attributes:
+      label: "📂 Suggested Structure"
+      description: "Outline the structure of the module, such as sections, subtopics, or key exercises."
+      placeholder: "This module could be structured as follows..."
+
+  - type: textarea
+    id: screenshots
+    validations:
+      required: false
+    attributes:
+      label: "📷 Screenshots or Mockups"
+      description: "Attach any visual aids or mockups to support your module proposal, if available."
+      placeholder: "Attach any design mockups here."
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "✔️ Pre-Submission Checklist"
+      options:
+        - label: "I have checked that a similar module does not already exist."
+          required: true
+        - label: "I have considered the relevance and value of this module for Tech6Sense's users."
+          required: true
+        - label: "I have reviewed the [Contributing Guidelines](https://github.com/Parnab03/Tech6Sense/blob/main/CONTRIBUTING.md) for module contributions."
+          required: true
+        - label: "I have reviewed the [Code of Conduct](https://github.com/Parnab03/Tech6Sense/blob/main/CODE_OF_CONDUCT.md) and agree to abide by it."
+          required: true
+
+  - type: textarea
+    id: additional-notes
+    validations:
+      required: false
+    attributes:
+      label: "📝 Additional Notes (Optional)"
+      description: "Provide any other information or context that may be relevant to this module proposal."
+      placeholder: "Any other details..."
