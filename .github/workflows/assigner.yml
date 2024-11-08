@@ -1,0 +1,35 @@
+name: "Assign Issue on Comment"
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  assign_on_comment:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Check if comment contains /assign command"
+        id: check_comment
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Extract the comment body
+          COMMENT_BODY="${{ github.event.comment.body }}"
+
+          # Check if the comment contains "/assign @username"
+          if [[ "$COMMENT_BODY" =~ ^/assign\ @([a-zA-Z0-9_-]+)$ ]]; then
+            ASSIGNEE="${BASH_REMATCH[1]}"
+            echo "Assigning issue to @${ASSIGNEE}"
+
+            # Assign the issue to the mentioned user
+            ISSUE_URL="https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}"
+            curl -X PATCH -H "Authorization: token $GITHUB_TOKEN" \
+              -d "{\"assignees\": [\"${ASSIGNEE}\"]}" \
+              "$ISSUE_URL"
+          else
+            echo "No valid '/assign @username' comment detected."
+          fi
+
+      - name: "Output result"
+        run: echo "Workflow completed."
