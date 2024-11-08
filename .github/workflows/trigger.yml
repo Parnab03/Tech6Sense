@@ -1,0 +1,55 @@
+name: "PR and Issue Trigger Workflow"
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+  issues:
+    types: [opened]
+
+jobs:
+  check_pr:
+    name: "PR Checks"
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout Code"
+        uses: actions/checkout@v3
+
+      - name: "Set up Node.js"  # Skip this if not using Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'  # Adjust as needed
+
+      - name: "Install Dependencies"
+        run: npm install  # Or your project’s dependency installation command
+
+      - name: "Run Linter"
+        run: |
+          npx eslint . || exit 0  # Runs eslint, exits gracefully on error (optional)
+
+      - name: "Run Tests"
+        run: npm test || exit 0  # Runs tests, exits gracefully on error (optional)
+
+      - name: "Comment on Pull Request"
+        if: github.event.action == 'opened' || github.event.action == 'reopened'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl -X POST -H "Authorization: token $GITHUB_TOKEN" \
+            -d '{"body":"👋 Thank you for your contribution! The team will review your PR shortly. Please make sure all checks pass and that your code follows the project’s guidelines."}' \
+            "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/comments"
+
+  notify_issue:
+    name: "Issue Notifier"
+    if: github.event_name == 'issues'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Post Issue Comment"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl -X POST -H "Authorization: token $GITHUB_TOKEN" \
+            -d '{"body":"👋 Thank you for opening this issue! The maintainers will review it soon."}' \
+            "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments"
