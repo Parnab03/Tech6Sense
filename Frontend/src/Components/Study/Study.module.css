@@ -1,0 +1,62 @@
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 800px;
+  height: 350px;
+  margin: 10px auto;
+}
+
+.imageSection {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.illustration {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.textSection {
+  flex: 2;
+  padding: 10px;
+  padding-left: 20px;
+  justify-content: flex-end;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: disc;
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.visitBtn {
+  background-color: #6a3ef2;
+  color: white;
+  padding: 3px 35px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.visitBtn:hover {
+  background-color: #4b158e;
+}

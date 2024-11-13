@@ -1,0 +1,76 @@
+.slider{    
+  position: relative;
+  width: 100%;
+  max-height: 50%;
+  margin: 40px 0;
+  align-items: center;
+  justify-content: center;
+}
+.sliderMain {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+.sliderMain img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 85%;
+    height: 10%;
+  object-fit: cover;
+}
+.leftArrow,
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 4rem; 
+  font-weight: bold;
+  color: #0b0a0a;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  user-select: none;
+}
+ .leftArrow {
+  left: 20px;
+}
+
+.rightArrow {
+  right: 20px;
+}
+
+/* Radio buttons container */
+.radioButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Radio button styling */
+.radioContainer {
+  display: inline-block;
+  margin: 0 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.radioContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkMark {
+  height: 15px;
+  width: 15px;
+  /* background-color: #bbb; */
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.radioContainer input:checked ~ .checkMark {
+  background-color: #717171;
+}
