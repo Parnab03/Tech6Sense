@@ -1,0 +1,49 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 500%;
+    /* overflow: hidden;  */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.scrollContainer {
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+.scrollContent {
+  display: flex;
+  flex-direction: row;
+  animation: scroll 30s linear infinite; 
+}
+.scrollContent2 {
+  display: flex;
+  flex-direction: row;
+  animation: scroll 25s linear infinite reverse; ; 
+}
+
+.imageContainer {
+  padding: 20px;
+}
+
+.scrollImage {
+  width: 150px; 
+  height: 60px;
+  border-radius: 10px;
+}
+.scrollImage2 {
+  width: 150px; 
+  height: 60px;
+  border-radius: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-40%); 
+  }
+}
