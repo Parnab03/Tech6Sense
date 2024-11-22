@@ -1,5 +1,5 @@
 // import "bootstrap/dist/css/bootstrap.min.css";
-import logo from "./logo.png";
+import logo from "../../src/assets/images/logo.png";
 import styles from "./Navbar.module.css";
 const Navbar = () => {
     return (

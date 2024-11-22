@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Card.module.css";
-import background from "../images/background.png";
+import background from "../../../assets/images/background.png";
 
 
 
