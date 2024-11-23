@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from "../../assets/images/logo.png";
-import background from "../../assets/images/background.png";
+import logo from "../../../public/images/logo.png";
+import background from "../../../public/images/background.png";
 import StudyEle from './StudyEle';
 
 const Study = () => {
