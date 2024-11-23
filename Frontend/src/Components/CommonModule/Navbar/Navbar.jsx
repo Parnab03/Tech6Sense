@@ -1,5 +1,4 @@
-// import "bootstrap/dist/css/bootstrap.min.css";
-import logo from "../../../../public/images/logo.png";
+import Tech6SenseLogo from "/Tech6SenseLogo.svg";
 import styles from "./Navbar.module.css";
 import { NavLink } from "react-router-dom";
 
@@ -10,7 +9,7 @@ const Navbar = () => {
                 className={`navbar navbar-expand-lg bg-body-tertiary ${styles.mainContainer}`}>
                 <div className={`container-fluid ${styles.containerMain}`}>
                     <button
-                        class="navbar-toggler"
+                        className="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent"
@@ -23,7 +22,7 @@ const Navbar = () => {
                         className={`collapse navbar-collapse ${styles.navMain}`}
                         id="navbarSupportedContent">
                         <ul className={`navbar-nav me-auto mb-2 mb-lg-0`}>
-                            <li clasNames={`nav-item `}>
+                            <li className={`nav-item `}>
                                 <NavLink
                                     className={`nav-link active `}
                                     aria-current="page"
@@ -57,13 +56,13 @@ const Navbar = () => {
                                 </NavLink>
                             </li>
                         </ul>
-                        <NavLink className="navbar-brand" to='/'>
+                        <NavLink className="navbar-brand" to="/">
                             <img
-                                src={logo}
+                                src={Tech6SenseLogo}
                                 alt="Logo"
                                 width="150"
                                 height="45"
-                                class="d-inline-block align-text-top"
+                                className="d-inline-block align-text-top"
                             />
                         </NavLink>
                     </div>
