@@ -1,6 +1,8 @@
 // import "bootstrap/dist/css/bootstrap.min.css";
-import logo from "../../src/assets/images/logo.png";
+import logo from "../../../../public/images/logo.png";
 import styles from "./Navbar.module.css";
+import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
     return (
         <>
@@ -22,40 +24,40 @@ const Navbar = () => {
                         id="navbarSupportedContent">
                         <ul className={`navbar-nav me-auto mb-2 mb-lg-0`}>
                             <li clasNames={`nav-item `}>
-                                <a
+                                <NavLink
                                     className={`nav-link active `}
                                     aria-current="page"
-                                    href="#">
+                                    to="/">
                                     Home
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="nav-item">
-                                <a
+                                <NavLink
                                     className="nav-link active"
                                     aria-current="page"
-                                    href="#">
+                                    to="/study">
                                     Study
-                                </a>
+                                </NavLink>
                             </li>
 
                             <li className="nav-item">
-                                <a
+                                <NavLink
                                     className="nav-link active"
                                     aria-disabled="page"
-                                    href="#">
+                                    to="/placement">
                                     Placement
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="nav-item">
-                                <a
+                                <NavLink
                                     className="nav-link active"
                                     aria-disabled="page"
-                                    href="#">
+                                    to="/about">
                                     About
-                                </a>
+                                </NavLink>
                             </li>
                         </ul>
-                        <a className="navbar-brand" href="#">
+                        <NavLink className="navbar-brand" to='/'>
                             <img
                                 src={logo}
                                 alt="Logo"
@@ -63,7 +65,7 @@ const Navbar = () => {
                                 height="45"
                                 class="d-inline-block align-text-top"
                             />
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
             </nav>
