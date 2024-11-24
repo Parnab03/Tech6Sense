@@ -13,8 +13,8 @@
 
 .text {
     margin: 7px 2px;
-    font-size: 18px; /* Increase font size */
-    line-height: 1.5; /* Improve line spacing */
+    font-size: 18px; 
+    line-height: 1.5; 
     display: flex; 
     align-items: center;
 }
@@ -23,12 +23,12 @@
     padding-top: 10px;
 }
 
-/* Additional styles for hover effects on links, if any */
 .text a {
-    color: #333; /* Link color */
-    text-decoration: none; /* Remove underline */
+    color: #333; 
+    text-decoration: none; 
 }
 
 .text a:hover {
-    text-decoration: none; /* Underline on hover */
+    text-decoration: none; 
+    color: #5F9AFF;
 }
