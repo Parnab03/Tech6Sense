@@ -4,17 +4,20 @@ import Home from "./Components/HomeModule/Home";
 import "./App.css";
 import Study from "./Components/StudyModule/Study";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Error from "./Components/ErrorModule/Error";
+import Error from "./Components/InfoModule/Error";
+import Construction from "./Components/InfoModule/Construction";
 
 function App() {
     return (
         <>
             <BrowserRouter>
-                <Navbar/>
+                <Navbar />
                 <Routes>
-                    <Route path="/" element={<Home/>} />        
-                    <Route path="/study" element={<Study/>} />        
-                    <Route path="*" element={<Error/>} />        
+                    <Route path="/" element={<Home />} />
+                    <Route path="/study" element={<Study />} />
+                    <Route path="/placement" element={<Construction />} />
+                    <Route path="/about" element={<Construction />} />
+                    <Route path="*" element={<Error />} />
                 </Routes>
             </BrowserRouter>
             <Footer></Footer>
