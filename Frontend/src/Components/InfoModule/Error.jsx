@@ -1,5 +1,5 @@
 import React from "react";
-import NotFound from "./404NotFound.svg"; // Ensure correct path
+import NotFound from "/404NotFound.svg"; // Ensure correct path
 import styles from "./Error.module.css";
 import { NavLink } from "react-router-dom";
 import Navbar from "../CommonModule/Navbar/Navbar";
