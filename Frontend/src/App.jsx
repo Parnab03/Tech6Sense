@@ -13,7 +13,6 @@ function App() {
     return (
         <>
             <BrowserRouter>
-                <Navbar />
                 <MobileInfo/>
                 <Routes>
                     <Route path="/" element={<Home />}/>
