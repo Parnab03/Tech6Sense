@@ -1,0 +1,17 @@
+.topNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 40px;
+}
+.btn{
+    background: #fff;
+    border: 1px solid #333;
+    border-radius: 7px;
+    font-family: 'Poppins', sans-serif; 
+    padding: 7px 13px;
+    margin: 0px 20px;
+}
+.btn :hover{
+    color: #5F9AFF ;
+}
