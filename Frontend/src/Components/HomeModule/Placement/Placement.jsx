@@ -1,25 +1,42 @@
 import styles from "./Placement.module.css";
-const Placement = () => {    
+import img from "./PlacementPage.png";
+import forPlacement from "./For_Placement.svg";
+import { TbSquareRoundedArrowRight } from "react-icons/tb";
+const Placement = () => {
     return (
-      <div className={styles.container}>
-        <div className={styles.textContainer}>
-          <h2 className={styles.title}>For Placement</h2>
-          <ul className={styles.list}>
-            <li>Lorem Ipsum is simply</li>
-            <li>dummy text of the printing and</li>
-            <li>typesetting industry. Lorem Ipsum</li>
-            <li>has been the industry's standard dum</li>
-          </ul>
-          <button className={styles.button}>Visit</button>
+        <div className={styles.container}>
+            <div className={styles.textContainer}>
+                <img
+                    src={forPlacement}
+                    alt="forPlacement"
+                    className={styles.forPlacement}
+                />
+                <p className={styles.list}>
+                    <TbSquareRoundedArrowRight />
+                    {" "}
+                    Lorem Ipsum is simply
+                </p>
+                <p className={styles.list}>
+                    <TbSquareRoundedArrowRight />
+                    {" "}
+                    Lorem Ipsum is simply 2
+                </p>
+                <p className={styles.list}>
+                    <TbSquareRoundedArrowRight />
+                    {" "}
+                    Lorem Ipsum is simply 3rd
+                </p>
+                <p className={styles.list}>
+                    <TbSquareRoundedArrowRight />
+                    {" "}
+                    Lorem Ipsum is simply forth
+                </p>
+                <button className={styles.button}>Visit Now</button>
+            </div>
+            <div className={styles.imageContainer}>
+                <img src={img} alt="PlacementPage" className={styles.image} />
+            </div>
         </div>
-        <div className={styles.imageContainer}>
-          <img
-            src="https://img.freepik.com/premium-vector/boy-with-glasses-holding-book-with-book-his-hand_1230457-42719.jpg"
-            alt=""
-            className={styles.image}
-          />
-        </div>
-      </div>
     );
-}
+};
 export default Placement;
