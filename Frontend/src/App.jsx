@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Error from "./Components/InfoModule/Error";
 import Construction from "./Components/InfoModule/Construction";
 import Admin from "./Components/AdminModule/Admin";
+import SubstudyMain from "./Components/StudyModule/subStudy/SubstudyMain";
 
 function App() {
     return (
@@ -17,6 +18,8 @@ function App() {
                     <Route path="/about" element={<Construction />} />
                     <Route path="/admin" element={<Admin />} />
                     <Route path="*" element={<Error />} />
+                    
+                    <Route path="/study/sap" element={<SubstudyMain />} />
                 </Routes>
             </BrowserRouter>
         </>
