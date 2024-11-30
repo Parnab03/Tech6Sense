@@ -5,18 +5,20 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Error from "./Components/InfoModule/Error";
 import Construction from "./Components/InfoModule/Construction";
 import Admin from "./Components/AdminModule/Admin";
+import MobileInfo from "./Components/InfoModule/MobileInfo";
 
 function App() {
     return (
         <>
             <BrowserRouter>
+                <MobileInfo/>
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<Home />}/>
                     <Route path="/study" element={<Study />} />
                     <Route path="/placement" element={<Construction />} />
                     <Route path="/about" element={<Construction />} />
                     <Route path="/admin" element={<Admin />} />
-                    <Route path="*" element={<Error />} />
+                    <Route path="*" element={<Error />} /> 
                 </Routes>
             </BrowserRouter>
         </>
