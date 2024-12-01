@@ -1,9 +1,8 @@
 import Card from "./Card/Card";
-import Slider1 from "./Slider/Slider1";
 import Placement from "./Placement/Placement";
 import Courseslider from "./Courseslider/Courseslider";
+import Course from "./Course/Course";
 // import Testimonials from "./Testimonials/Textimonials";
-import Study from "./Study/Study";
 import Navbar from "../CommonModule/Navbar/Navbar";
 import Footer from "../CommonModule/Footer/Footer";
 
@@ -12,10 +11,9 @@ const Home = () => {
         <>
             <Navbar />
             <Card></Card>
-            <Slider1></Slider1>
-            <Placement></Placement>
             <Courseslider></Courseslider>
-            <Study></Study>
+            <Course />
+            <Placement></Placement>
             {/* <Testimonials></Testimonials> */}
             <Footer />
         </>

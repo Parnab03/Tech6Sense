@@ -3,8 +3,6 @@ import styles from "./Card.module.css";
 import background from "/TempBanner.svg";
 import background2 from "../../../assets/background.png";
 
-
-
 const images = [background, background2, background, background2];
 
 const Card = () => {

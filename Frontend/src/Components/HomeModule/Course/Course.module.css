@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 0 30px;
+  width: 80%;
+  min-height: 300px;
+  margin: 60px auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.forPlacement{
+  margin-bottom: 20px;
+}
+/* .title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+} */
+
+.list {
+  font-size: 27px;
+  align-items: center;
+}
+
+.button {
+  margin-top: 20px;
+  background-color: #9ABEFF;
+  color: white;
+  padding: 5px 40px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 19px;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image {
+  width: 70%;
+  /* height: 150px; */
+  /* object-fit: cover; */
+  border-radius: 7px;
+}
