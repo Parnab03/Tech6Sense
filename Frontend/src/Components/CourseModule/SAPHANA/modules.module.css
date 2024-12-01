@@ -1,0 +1,48 @@
+.modules {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
+    /* border: 1px solid black; */
+    width: 100%;
+    border-radius: 7px;
+}
+.mainModule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 98%;
+    border-radius: 10px;
+}
+.moduleBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.moduleTitle {
+    margin-left: 20px;
+    margin-top: 20px;
+    align-items: center;
+    font-weight:bold ;
+}
+.subItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: center;
+    width: 98%;
+}
+.subItem {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    float: left;
+    padding: 7px;
+}

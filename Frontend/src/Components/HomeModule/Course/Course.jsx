@@ -1,8 +1,8 @@
-import styles from "./Placement.module.css";
+import styles from "./Course.module.css";
 import img from "./PlacementPage.png";
 import forPlacement from "./For_Placement.svg";
 import { TbSquareRoundedArrowRight } from "react-icons/tb";
-const Placement = () => {
+const Course = () => {
     return (
         <div className={styles.container}>
             <div className={styles.textContainer}>
@@ -31,4 +31,4 @@ const Placement = () => {
         </div>
     );
 };
-export default Placement;
+export default Course;

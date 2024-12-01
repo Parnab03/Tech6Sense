@@ -1,7 +1,9 @@
+import React from "react";
 import { BiCopyright } from "react-icons/bi";
 import { GoLinkExternal } from "react-icons/go";
 import Tech6SenseFooterLogo from "/Tech6SenseFooterLogo.svg";
 import styles from "./Footer.module.css";
+
 const Footer = () => {
     return (
         <footer className={`Footer ${styles.mainfooter}`}>
@@ -22,4 +24,5 @@ const Footer = () => {
         </footer>
     );
 };
+
 export default Footer;

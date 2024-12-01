@@ -1,5 +1,5 @@
 import React from "react";
-import NotFound from "/404NotFound.svg";
+import NotFound from "/404NotFound.svg"; // Ensure correct path
 import styles from "./Error.module.css";
 import Navbar from "../CommonModule/Navbar/Navbar";
 import Footer from "../CommonModule/Footer/Footer";

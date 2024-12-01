@@ -4,71 +4,67 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <>
-            <nav
-                className={`navbar navbar-expand-lg bg-body-tertiary ${styles.mainContainer}`}>
-                <div className={`container-fluid ${styles.containerMain}`}>
-                    <button
-                        className="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div
-                        className={`collapse navbar-collapse ${styles.navMain}`}
-                        id="navbarSupportedContent">
-                        <ul className={`navbar-nav me-auto mb-2 mb-lg-0`}>
-                            <li className={`nav-item `}>
-                                <NavLink
-                                    className={`nav-link active `}
-                                    aria-current="page"
-                                    to="/">
-                                    Home
-                                </NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink
-                                    className="nav-link active"
-                                    aria-current="page"
-                                    to="/study">
-                                    Study
-                                </NavLink>
-                            </li>
-
-                            <li className="nav-item">
-                                <NavLink
-                                    className="nav-link active"
-                                    aria-disabled="page"
-                                    to="/placement">
-                                    Placement
-                                </NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink
-                                    className="nav-link active"
-                                    aria-disabled="page"
-                                    to="/about">
-                                    About
-                                </NavLink>
-                            </li>
-                        </ul>
-                        <NavLink className="navbar-brand" to="/">
-                            <img
-                                src={Tech6SenseLogo}
-                                alt="Logo"
-                                width="150"
-                                height="45"
-                                className="d-inline-block align-text-top"
-                            />
-                        </NavLink>
-                    </div>
+        <nav className={styles.navbar}>
+            <div className={styles.container}>
+                <div className={styles.logo}>
+                    <NavLink to="/">
+                        <img
+                            src={Tech6SenseLogo}
+                            alt="Logo"
+                            width="150"
+                            height="45"
+                        />
+                    </NavLink>
                 </div>
-            </nav>
-        </>
+                <div
+                    className={styles.navToggle}
+                    onClick={() =>
+                        document
+                            .getElementById("nav-links")
+                            .classList.toggle(styles.active)
+                    }>
+                    <span className={styles.bar}></span>
+                    <span className={styles.bar}></span>
+                    <span className={styles.bar}></span>
+                </div>
+                <ul id="nav-links" className={styles.navLinks}>
+                    <li>
+                        <NavLink
+                            className={styles.navLink}
+                            to="/"
+                            exact
+                            activeClassName={styles.activeLink}>
+                            Home
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            className={styles.navLink}
+                            to="/course"
+                            activeClassName={styles.activeLink}>
+                            Course
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            className={styles.navLink}
+                            to="/placement"
+                            activeClassName={styles.activeLink}>
+                            Placement
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            className={styles.navLink}
+                            to="/about"
+                            activeClassName={styles.activeLink}>
+                            About
+                        </NavLink>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     );
 };
+
 export default Navbar;

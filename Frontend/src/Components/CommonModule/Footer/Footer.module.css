@@ -23,6 +23,7 @@
     padding-top: 10px;
 }
 
+/* Link styles */
 .text a {
     color: #333; 
     text-decoration: none; 
@@ -31,4 +32,31 @@
 .text a:hover {
     text-decoration: none; 
     color: #5F9AFF;
+}
+
+@media (max-width: 768px) {
+    .text {
+        font-size: 16px; 
+    }
+
+    .mainfooter {
+        padding-top: 40px; 
+    }
+
+    .logo {
+    padding-top: 10px;
+    max-width: 100%;
+    height: auto; 
+}
+}
+
+@media (max-width: 480px) {
+    .text {
+        font-size: 14px; 
+        margin: 5px 0; 
+    }
+
+    .mainfooter {
+        padding-top: 20px; 
+    }
 }

@@ -1,12 +1,30 @@
 import React, { useState } from "react";
-import styles from "./sideNav.module.css";
+import styles from "./SideNav.module.css";
 
-const sideNav = ({ menuItems }) => {
+const SideNav = () => {
     const [openIndex, setOpenIndex] = useState(null);
 
     const handleDropdown = (index) => {
         setOpenIndex(openIndex === index ? null : index);
     };
+    const menuItems = [
+        {
+            title: "Module 1",
+            subItems: ["Lecture 1", "Lecture 2"],
+        },
+        {
+            title: "Module 2",
+            subItems: ["Lecture 1", "Lecture 2", "Lecture 3"],
+        },
+        {
+            title: "Module 3",
+            subItems: [],
+        },
+        {
+            title: "Module 4",
+            subItems: ["Lecture 1", "Lecture 2", "Lecture 3"],
+        },
+    ];
 
     return (
         <div className={styles.sideNavbar}>
@@ -43,4 +61,4 @@ const sideNav = ({ menuItems }) => {
     );
 };
 
-export default sideNav;
+export default SideNav;

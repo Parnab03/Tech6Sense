@@ -1,4 +1,4 @@
-import "./Study.css";
+import "./StudyEle.css";
 
 const StudyEle = (props) =>{
     return (
