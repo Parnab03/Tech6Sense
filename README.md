@@ -1,4 +1,7 @@
-![Tech6Sense Logo](https://github.com/Parnab03/Tech6Sense/blob/main/Tech6Sense%20Logo.jpg) <!-- Replace with actual logo/image -->
+<div align="center">
+  <img src="https://github.com/Parnab03/Tech6Sense/blob/main/Tech6SenseLogo.svg" alt="Tech6Sense Logo" width="100%"/>
+</div>
+
 
 **Tech6Sense** is an all-in-one learning portal designed to help students excel in popular programming languages and prepare for placements. Dive into comprehensive resources on languages like **C**, **Java**, **Python**, and technologies like **SAP**, and more, all geared toward building a strong technical foundation and ensuring you're ready for the job market.
 
